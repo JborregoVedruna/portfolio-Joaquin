@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="María's' portfolio">
+    <meta name="keywords" content="portfolio, web, Examen">
+    <meta name="language" content="ES">
+    <meta name="author" content="maria.sisamon@a.vedrunasevillasj.es">
+    <meta name="robots" content="index, follow">
+    <meta name="revised" content="Viernes, Enero 20th, 2023, 18:15pm">
+    <meta name="viewport" content="width=device-width, initial scale-1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge, chrome" />
+
+    <meta http-equiv="refresh" content="300; URL=Index.html" />
+
+    <title>María's' portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" title="style">
+
+</head>
+
+<body>
+    <header class="row margenes">
+        <a href="../Index.html"><img src="../img/logovedruna.png" height="75"></a>
+        <nav class="row">
+            <a href="../Index.html">Inicio</a>
+            <a href="../aboutMe/aboutMe.html">Sobre mí</a>
+            <a href="../portfolio/portfolio.html">Portfolio</a>
+            <a href="../services/services.html">Servicios</a>
+            <a href="../contact/contact.html">Contacto</a>
+        </nav>
+    </header>
+    <section class="contacto column margenes">
+        <h2>Contáctame</h2>
+        <form method="get" autocomplete="on">
+            <fieldset>
+                <legend class="legend">Contact me</legend>
+                <div class="content-form">
+                    <div id="content1">
+                        <div>
+                            <label for="fname">Nombre:</label>
+                            <input type="text" id="fname" placeholder="Nombre">
+                        </div>
+                        <div>
+                            <label for="email">Correo electrónico:</label>
+                            <input type="email" id="email" placeholder="Correo electrónico">
+                        </div>
+                        <div>
+                            <label for="subject">Selecciona Asunto:</label>
+                            <select id="asunto" name="asunto">
+                                <option value="entrevista">Solicitar entrevista</option>
+                                <option value="consulta">Consulta</option>
+                                <option value="info">Información</option>
+                                <option value="propuesta">Propuesta comercial</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="conocido">Cómo me ha conocido</label>
+
+                            <div class="tab">
+                                <input type="checkbox" id="rrss" name="rrss" checked>
+                                <label for="rrss">Redes Sociales</label>
+                            </div>
+
+                            <div class="tab">
+                                <input type="checkbox" id="ads" name="ads">
+                                <label for="ads">Anuncios</label>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="opinion">Qué le ha parecido mi web</label>
+                            <div class="tab">
+                                <input class="radio" type="radio" name="opinion" id="pobre" value="pobre">
+                                <label for="opinion">Pobre</label>
+                            </div>
+                            <div class="tab">
+                                <input class="radio" type="radio" name="opinion" id="normal" value="normal">
+                                <label for="opinion">Normal</label>
+                            </div>
+                            <div class="tab">
+                                <input class="radio" type="radio" name="opinion" id="excelente" value="excelente">
+                                <label for="opinion">Excelente</label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div id="mensaje">
+                        <label for="message">Cuerpo del mensaje:</label>
+                        <textarea name="message" id="message" placeholder="Aquí va el cuerpo del mensaje..."
+                            rows="10"></textarea>
+                    </div>
+                </div>
+                <div class="centro">
+                    <input type="reset" class="reset" value="Reset">
+                    <input type="submit" class="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; María Sisamón Márquez</p>
+    </footer>
+</body>
+
+</html>
